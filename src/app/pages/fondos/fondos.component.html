@@ -1,0 +1,26 @@
+<ion-grid [fixed]="true" class="tableFondos">
+  <ion-row class=" titulosTable ion-padding" style="background: var(--ion-color-primary); color: #fff; font-weight: bold;">
+    @for (nc of nombresCampos; track nc; let i = $index) {
+      <ion-col [size]="sizeRow" class="">{{nc}}</ion-col>
+    }
+  </ion-row>
+
+  @for (fd of fondosData; track fd; let i = $index) {
+    <ion-row class="bodyTable">
+      @for (valor of getValores(fd); track valor;) {
+        <ion-col [size]="sizeRow" class="">{{valor}}</ion-col>
+      }
+        <ion-col [size]="sizeRow" class="accionesButtons">
+          @if (fd.status=="No suscrito") {
+            <ion-button color="primary" class="cancelarSuscripcion" (click)="alertSuscrip(fd)">
+              <ion-icon aria-hidden="true" slot="icon-only" [ios]="'square' + '-outline'" [md]="'square' + '-sharp'"></ion-icon>
+            </ion-button>
+          } @else {
+            <ion-button color="danger" class="suscribir" (click)="alertCancelarSus(fd)">
+              <ion-icon aria-hidden="true" slot="icon-only" [ios]="'checkbox' + '-outline'" [md]="'checkbox' + '-sharp'"></ion-icon>
+            </ion-button>
+          }
+        </ion-col>
+    </ion-row>
+  }
+</ion-grid>

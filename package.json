@@ -1,5 +1,5 @@
 {
-  "name": "pruebaFront",
+  "name": "prueba-front",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -9,6 +9,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "testdev": "ng test --no-watch --code-coverage",
     "lint": "ng lint"
   },
   "private": true,

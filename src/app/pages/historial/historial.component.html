@@ -1,0 +1,17 @@
+<ion-grid [fixed]="true" class="tableFondos">
+  <ion-row class=" titulosTable ion-padding" style="background: var(--ion-color-primary); color: #fff; font-weight: bold;">
+    <ion-col size="1">#</ion-col>
+    @for (nc of nombresCampos; track nc; let i = $index) {
+      <ion-col [size]="sizeRow">{{nc}}</ion-col>
+    }
+  </ion-row>
+
+  @for (fd of historial; track fd; let i = $index) {
+    <ion-row class="bodyTable">
+        <ion-col size="1">{{i+1}}</ion-col>
+      @for (valor of getValores(fd); track valor;) {
+        <ion-col [size]="sizeRow">{{valor}}</ion-col>
+      }
+    </ion-row>
+  }
+</ion-grid>

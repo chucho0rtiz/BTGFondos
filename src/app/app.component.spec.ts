@@ -22,9 +22,9 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-label');
-    expect(menuItems.length).toEqual(12);
-    expect(menuItems[0].textContent).toContain('Inbox');
-    expect(menuItems[1].textContent).toContain('Outbox');
+    expect(menuItems.length).toEqual(2);
+    expect(menuItems[0].textContent).toContain('Fondos');
+    expect(menuItems[1].textContent).toContain('Historial');
   });
 
   it('should have urls', () => {
@@ -32,12 +32,12 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-item');
-    expect(menuItems.length).toEqual(12);
+    expect(menuItems.length).toEqual(2);
     expect(menuItems[0].getAttribute('href')).toEqual(
-      '/folder/inbox'
+      '/folder/fondos'
     );
     expect(menuItems[1].getAttribute('href')).toEqual(
-      '/folder/outbox'
+      '/folder/historial'
     );
   });
 });

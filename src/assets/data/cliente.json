@@ -1,0 +1,18 @@
+{
+    "HistorialFondos": [
+        {
+            "IdFondo": 3,
+            "TipoOperacion": "Suscripción",
+            "Fondo": "DEUDAPRIVADA",
+            "Monto": 55000,
+            "Fecha": "2025-05-10"
+        },
+        {
+            "IdFondo": 3,
+            "TipoOperacion": "Cancelación",
+            "Fondo": "DEUDAPRIVADA",
+            "Monto": 55000,
+            "Fecha": "2025-07-01"
+        }
+    ]
+}

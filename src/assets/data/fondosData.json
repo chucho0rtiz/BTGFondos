@@ -1,0 +1,37 @@
+[
+    {
+        "ID": 1,
+        "Nombre": "FPV_BTG_PACTUAL_RECAUDADORA",
+        "MontoMinimo": 75000,
+        "Categoria": "FPV",
+        "status": "No suscrito"
+    },
+    {
+        "ID": 2,
+        "Nombre": "FPV_BTG_PACTUAL_ECOPETROL",
+        "MontoMinimo": 125000,
+        "Categoria": "FPV",
+        "status": "No suscrito"
+    },
+    {
+        "ID": 3,
+        "Nombre": "DEUDAPRIVADA",
+        "MontoMinimo": 50000,
+        "Categoria": "FIC",
+        "status": "No suscrito"
+    },
+    {
+        "ID": 4,
+        "Nombre": "FDO-ACCIONES",
+        "MontoMinimo": 250000,
+        "Categoria": "FIC",
+        "status": "No suscrito"
+    },
+    {
+        "ID": 5,
+        "Nombre": "FPV_BTG_PACTUAL_DINAMICA",
+        "MontoMinimo": 100000,
+        "Categoria": "FPV",
+        "status": "No suscrito"
+    }
+]
